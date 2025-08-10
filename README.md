@@ -1,6 +1,41 @@
-# Docker Disaster Recovery Backup Script
+# Docker Disaster Recovery Backup Script to Google Drive
 
-A comprehensive backup solution for Docker-based home lab environments with intelligent retention policy. This script creates timestamped backups of your Docker configurations, scripts, and system files whilst automatically managing storage through a graduated retention system.
+A comprehensive backup solution for headless, Linux-based home lab environments with an intelligent retention policy. This script creates timestamped backups of your Docker configurations, scripts, and system files whilst automatically managing storage through a graduated retention system.
+
+Please note - this is primarily a Docker-focused backup script, although it does back up other important system files too. 
+Here's the breakdown of what this script does:
+
+Docker-Focused Backups (~70% of the script):
+
+- Docker Compose files (.yml, .yaml)
+- Docker environment files (.env)
+- Docker-related scripts (.sh)
+- Docker network configurations
+- Dockerfiles and configs
+
+Non-Docker System Backups (~30%):
+
+- All your custom scripts (/home/username/scripts/)
+- SSH keys (~/.ssh/)
+- Shell configs (.bashrc, .profile)
+- Email config (/etc/msmtprc)
+- Crontab entries
+- System package list (for rebuilding the entire system)
+
+What It Doesn't Back Up:
+
+- Application data (explicitly excludes */data/**)
+- Log files (excludes */logs/**)
+- Cache directories (excludes */cache/**)
+- Personal documents, photos, etc.
+
+It's really a "Infrastructure Recovery" script rather than a complete system backup. It's designed to let you rebuild your entire Docker-based home lab setup from scratch, but you'd still need separate backups for:
+
+- Personal files
+- Media collections
+- Application databases (unless you have separate database backup strategies)
+
+------
 
 ## Features
 
