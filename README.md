@@ -15,7 +15,7 @@ Docker-Focused Backups (~70% of the script):
 
 Non-Docker System Backups (~30%):
 
-- All your custom scripts (/home/username/scripts/) [well, this is where I keep all my local scripts anyway]
+- All your custom scripts (/home/username/scripts/) [well, this is where I keep my scripts on this machine, anyway]
 - SSH keys (~/.ssh/)
 - Shell configs (.bashrc, .profile)
 - Email config (/etc/msmtprc)
@@ -27,7 +27,7 @@ What It Doesn't Back Up:
 - Application data (explicitly excludes */data/**)
 - Log files (excludes */logs/**)
 - Cache directories (excludes */cache/**)
-- Personal documents, photos, etc. [this is really for a home headless limnux box that hosts docker and does some automation, it doesnt have personal stuff on it anyway]
+- Personal documents, photos, etc. [as this is for a home headless limnux box that hosts docker and does some automation, it doesnt have personal stuff to backup, if i host music here i'd do that with a seperate script]
 
 It's really a "Infrastructure Recovery" script rather than a complete system backup. It's designed to let you rebuild your entire Docker-based home lab setup from scratch, but you'd still need separate backups for:
 
