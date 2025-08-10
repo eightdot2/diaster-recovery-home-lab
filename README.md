@@ -1,2 +1,2 @@
-# diaster-recovery-home-lab
+# ubuntu disaster-recovery-home-lab
 backing up a home linux server
