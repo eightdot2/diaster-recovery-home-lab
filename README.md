@@ -15,7 +15,7 @@ Docker-Focused Backups (~70% of the script):
 
 Non-Docker System Backups (~30%):
 
-- All your custom scripts (/home/username/scripts/)
+- All your custom scripts (/home/username/scripts/) [well, this is where I keep all my local scripts anyway]
 - SSH keys (~/.ssh/)
 - Shell configs (.bashrc, .profile)
 - Email config (/etc/msmtprc)
