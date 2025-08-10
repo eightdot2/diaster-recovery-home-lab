@@ -27,7 +27,7 @@ What It Doesn't Back Up:
 - Application data (explicitly excludes */data/**)
 - Log files (excludes */logs/**)
 - Cache directories (excludes */cache/**)
-- Personal documents, photos, etc.
+- Personal documents, photos, etc. [this is really for a home headless limnux box that hosts docker and does some automation, it doesnt have personal stuff on it anyway]
 
 It's really a "Infrastructure Recovery" script rather than a complete system backup. It's designed to let you rebuild your entire Docker-based home lab setup from scratch, but you'd still need separate backups for:
 
